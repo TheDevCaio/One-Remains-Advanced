@@ -8,7 +8,7 @@ body {
       display: grid;
       grid-template-columns: repeat(7, 17.6%);
       grid-template-rows: repeat(6, 16%);
-      gap: 2px;
+      gap: 1px;
       background-color: #ccc;
       width: 60vw;
       margin: 5vw auto;
@@ -44,9 +44,9 @@ body {
   
     /*Título*/
     .T{
-  
+      text-align: center;
       color: #efe7e7;
-      margin-left: 26vw;
+      margin-left: 27vw;
       margin-block-end: 3vw;
       font-weight: bold;
       font-size: 4vw;
@@ -128,7 +128,7 @@ body {
       #leads {
         list-style-type: none;
         text-align: center;
-        color: #fff;
+        color: #efe7e7;
         margin-top: 2vw;
         font-weight: bold;
         background-color: #294281;
