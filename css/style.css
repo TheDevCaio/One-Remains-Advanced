@@ -1,0 +1,153 @@
+body {
+    background-color: #294281;
+    font-family: Arial, sans-serif;
+    }
+    
+    .tabuleiro {
+      display: grid;
+      grid-template-columns: repeat(7, 50px);
+      grid-template-rows: repeat(6, 50px);
+      gap: 2px;
+      background-color: #ccc;
+      width: 366px;
+      margin: 20px auto;
+    }
+    
+    .casa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #294281;
+      border: 2px solid #888;
+      cursor: pointer;
+    }
+    
+    .casa-vazia {
+      background-color: transparent;
+      cursor: default;
+    
+    }
+    
+    
+    .disco {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    
+    .preto {
+      background-color: #000;
+      border-block-end: 2px solid #ffffff ;
+      border-right:  2px solid #ffffff;
+    }
+  
+    /*Título*/
+    .T{
+      color: #efe7e7;
+      margin-left: 26vw;
+      margin-block-end: 3vw;
+      font-weight: bold;
+      font-size: 4vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .F{
+      font-style: italic;
+      font-weight: bold;
+      font-size: 2vw;
+      color:white;
+      margin-left: 43vw;
+      margin-top: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      }
+  
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      
+      ul {
+        margin-top: 2%;
+        border: 1px solid #ffffff;
+        position: relative;
+        font-size: 4vw;
+        list-style: none;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: center; /* Centraliza os elementos horizontalmente */
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #menu ul {
+        border: 1px solid #ffffff;
+      }
+      
+      #menu li {
+        border-right: 1px solid #ffffff;
+      }
+      
+      #menu li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5vw 1vw;
+        display: block;
+        justify-items: center;
+      }
+      
+      .logo {
+        margin: 1vw;
+      }
+      
+      header,
+      #menu,
+      #menu ul {
+        display: flex;
+        justify-content: center; /* Centraliza os elementos horizontalmente */
+      }
+      
+      #menu {
+        flex: 1;
+        align-items: center;
+        margin-block-end: 4%;
+        justify-items: center;
+      }
+
+      #leads{
+        list-style-type: none;
+        text-align: center;
+        color: #fff;
+        margin-top: 2vw;
+        margin-left: 1.4%;
+        font-weight: bold;
+        background-color:  #294281;
+        opacity: 80%;
+        font-size: 100%;
+        display: inline-block;
+        justify-content: center; /* Centraliza os elementos horizontalmente */
+      }
+      
+      #start-btn.button{
+      margin-left: 23%;
+      }
+
+      #Button2 {
+        margin-top: 4%;
+        margin-left: 35%;
+        text-align: center;
+        font-size: 5vw;
+        background-color: #1a284d;
+        color: rgb(255, 255, 255);
+        border-radius: 30px;
+        opacity: 93%;
+      }
