@@ -4,13 +4,14 @@ body {
     }
     
     .tabuleiro {
+      justify-content: center;
       display: grid;
-      grid-template-columns: repeat(7, 50px);
-      grid-template-rows: repeat(6, 50px);
+      grid-template-columns: repeat(7, 17.6%);
+      grid-template-rows: repeat(6, 16%);
       gap: 2px;
       background-color: #ccc;
-      width: 366px;
-      margin: 20px auto;
+      width: 60vw;
+      margin: 5vw auto;
     }
     
     .casa {
@@ -18,7 +19,7 @@ body {
       align-items: center;
       justify-content: center;
       background-color: #294281;
-      border: 2px solid #888;
+      border: 0.5vw solid #888;
       cursor: pointer;
     }
     
@@ -43,6 +44,7 @@ body {
   
     /*Título*/
     .T{
+  
       color: #efe7e7;
       margin-left: 26vw;
       margin-block-end: 3vw;
@@ -123,18 +125,24 @@ body {
         justify-items: center;
       }
 
-      #leads{
+      #leads {
         list-style-type: none;
         text-align: center;
         color: #fff;
         margin-top: 2vw;
-        margin-left: 1.4%;
         font-weight: bold;
-        background-color:  #294281;
-        opacity: 80%;
+        background-color: #294281;
+        opacity: 0.8;
         font-size: 100%;
-        display: inline-block;
+        display: flex; /* Usar flexbox para alinhar os elementos */
+        flex-direction: column; /* Organiza os elementos em coluna (verticalmente) */
         justify-content: center; /* Centraliza os elementos horizontalmente */
+        align-items: center; /* Centraliza os elementos verticalmente */
+      }
+      
+      /* Estilize as mensagens dentro do contêiner */
+      #leads > li {
+        margin: 5px 0;
       }
       
       #start-btn.button{
